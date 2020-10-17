@@ -1,6 +1,7 @@
 # aws-maintenance
 Collection of scripts and Lambda functions used for maintaining various AWS resources.
 
+
 ## Cross-region RDS backups (backup-rds.py)
 
 Lambda function used to copy RDS snapshot from one region to another, to allow for the database to be restored in case of region failure.
@@ -46,6 +47,7 @@ Assumptions:
 1. Apart from `Type` tag, each AMI has a `Project` tag, which can contain any value.
 
 Those scripts make sure only a certain amount of recent images for each project is stored to limit the costs.
+
 
 ### clean-es-indices.py
 
